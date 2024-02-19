@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js"></script>
+  <script src="file1.js"></script>
+  <script src="file2.js"></script>
+  <title>Qmaze | 2K23</title>
+</head>
+
+<body>
+  
+  <div class="my-container">
+    <form>
+      <p class="code">
+        #include "stdio.h"<br>
+          void solve() {<br>
+              &nbsp;&nbsp;int ch = 2;<br>
+              &nbsp;&nbsp;switch(ch) {<br>
+                &nbsp;&nbsp;case 1: printf("1 "); <br>
+                &nbsp;&nbsp;case 2: printf("2 ");<br>
+                &nbsp;&nbsp;case 3: printf("3 ");<br>
+                &nbsp;&nbsp;default: printf("None");<br>
+              }<br>
+          }<br>
+          int main() {<br>
+            &nbsp;&nbsp;solve();<br>
+            &nbsp;&nbsp;return 0;<br>
+          }<br>
+          
+       
+      </p>
+      <label for="output" class="label">Output:</label>
+      <div class="output">
+        <input class="form-control" type="text" name="output" id="output" placeholder="Output Please">
+        <button onclick="check()" class="col-6 btn btn-danger my-3">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

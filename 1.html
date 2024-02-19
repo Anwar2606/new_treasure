@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merge and Display Local Storage Data</title>
+</head>
+<body>
+
+<h1>Local Storage Data</h1>
+
+<div id="displayData">
+  <!-- Data will be displayed here -->
+</div>
+
+<script>
+  // Retrieve data from local storage
+  var firstData = localStorage.getItem('username');
+  var secondData = localStorage.getItem('visibilityData');
+
+  // Merge data (for example, concatenating strings)
+  var mergedData = (firstData ? firstData : '') + ' ' + (secondData ? secondData : '');
+
+  // Update one key with the merged data
+  localStorage.setItem('mergedData', mergedData);
+
+  // Display data on the webpage
+  var displayDiv = document.getElementById('displayData');
+  var displayText = document.createElement('p');
+  displayText.textContent = 'Merged Data: ' + mergedData;
+  displayDiv.appendChild(displayText);
+</script>
+
+</body>
+</html>
